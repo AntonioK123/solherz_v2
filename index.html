@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -216,7 +217,7 @@
 
     <!------------------------------Projektleitung------------------------------------------->
 
-    <section class="projektleitung-section-wrapper">
+    <section class="projektleitung-section-wrapper" id="projektleitung">
       <h2>Projektleitung für Standortaufbau im Ausland</h2>
       <div class="projektleitung-content-wrapper">
         <div class="projektleitung-text-container">
@@ -238,7 +239,7 @@
 
     <!-----------------------------Über Uns  --------------------------------------->
      
-    <section class="über-wrapper">
+    <section class="über-wrapper" id="ueber-uns">
       <div class="über-text-container">
         <h1>Über uns</h1>
         <p>
@@ -277,6 +278,7 @@
             </div>
         </div>
         <div class="bio-second-block">
+          <h1>Biographie des Gründers</h1>
         <p>
           Mit einem Abschluss in Maschinenbau von der TU Wien und langjähriger 
           Erfahrung in der Industrie verfüge ich über eine breite Expertise in der Entwicklung,
@@ -285,13 +287,123 @@
           bis hin zur globalen Verantwortung für komplexe Maschinen und Produkten bei Andritz Pulp & Paper reichen.
           Dabei habe ich sowohl technisches als auch strategisches Know-how aufgebaut, das ich nun in meiner neuen Firma einbringe. 
         </p>
+        <h3><i class="bi bi-envelope-at-fill" style="font-size: 2rem; margin-right: 0.5rem;"></i> 
+             m.soldo@solherz.at </h3>
+        <h3><i class="bi bi-phone" style="font-size: 2rem; margin-right: 0.5rem;"></i> +43 650 2608369 </h3>
+        <a href="https://at.linkedin.com/in/mihovil-soldo-76464720a">
+          <i class="bi bi-linkedin" style="font-size: 2rem; padding: 1rem; color:black"></i>
+           <h3>Linkedin</h3>
+           </a>
       </div>
     </div>
   </div>
     </section>
 
 
+                     <!---------------------------Kontakt -------------------------->
 
+        <section class="kontakt-wrapper" id="kontakt">
+          <div class="kontakt-content">
+            <div class="kontakt-title">
+              <h1>Kontakt</h1>
+              <p>Interessiert an unseren Dienstleistungen? Kontaktieren Sie uns für ein unverbindliches Angebot oder eine individuelle Beratung. Wir freuen uns darauf, Ihre Projekte zu verwirklichen!</p>
+            </div>
+             <div class="kontakt-two-blocks">
+               <div class="kontakt-first-block">
+
+                <div class="handy">
+                  <div class="handy-icon">
+                    <i class="bi bi-telephone-fill" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
+                  </div>
+                  <div class="handy-text">
+                    <h2>Rufen Sie uns an!</h2>
+                    <p> +43 650 2608369 </p>
+                  </div>
+                </div>
+
+
+                <div class="schreiben">
+                  <div class="schreiben-icon">
+                    <i class="bi bi-pen-fill" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
+                  </div>
+                  <div class="schreiben-text">
+                    <h2>Schreiben Sie uns!</h2>
+                    <p>office@solherz.at</p>
+                  </div>
+                </div>
+
+
+                <div class="location">
+                  <div class="location-icon">
+                    <i class="bi bi-compass" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
+                  </div>
+                  <div class="location-text">
+                    <h2>Besuchen Sie uns!</h2>
+                    <p>Favoritenstrasse 24/14</p>
+                    <p>1040 Wien</p>
+                  </div>
+                </div>
+
+               </div>
+               <!------------------------------------Contact Form----------------------------->
+               <div class="kontakt-second-block">
+                <form
+                id="contact-form"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="form-wrapper"
+              >
+                <input type="hidden" name="access_key" value="YOUR_API_KEY_HERE" />
+    
+                <div class="form-first-group-wrapper">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ihren Namen"
+                    required
+                  />
+    
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ihre Email"
+                    required
+                  />
+    
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    placeholder="Telefonnummer"
+                    required
+                  />
+    
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Unternehmen"
+                    required
+                  />
+                </div>
+    
+                <div class="form-second-group-wrapper">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Nachricht"
+                    required
+                  ></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Senden</button>
+              </form>
+               </div>
+             </div>
+          </div>
+        </section>
 
 
     <script src="./js/main.js"></script>
