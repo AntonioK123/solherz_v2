@@ -1,4 +1,4 @@
-.drehen-wrapper {
+.wärme-wrapper {
   width: 100%;
   min-height: 100vh;
   background-color: black;
@@ -7,23 +7,23 @@
   align-items: center;
 }
 
-.drehen-content {
+.wärme-content {
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text {
+.wärme-title-text {
   color: white;
 }
 
-.drehen-title-text > h1 {
-  font-size: clamp(1.9rem, 4vw, 5rem);
+.wärme-title-text > h1 {
+  font-size: clamp(1.4rem, 4vw, 5rem);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text > p {
+.wärme-title-text > p {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   line-height: 1.6;
   margin-bottom: 3rem;
@@ -40,11 +40,11 @@
 
 /* Responsive layout */
 @media (max-width: 768px) {
-  .drehen-content {
+  .wärme-content {
     margin-top: 6rem;
   }
 
-  .drehen-title-text > h1 {
+  .wärme-title-text > h1 {
     text-align: center;
   }
 }

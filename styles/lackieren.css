@@ -1,4 +1,4 @@
-.drehen-wrapper {
+.lackieren-wrapper {
   width: 100%;
   min-height: 100vh;
   background-color: black;
@@ -7,44 +7,36 @@
   align-items: center;
 }
 
-.drehen-content {
+.lackieren-content {
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text {
+.lackieren-title-text {
   color: white;
 }
 
-.drehen-title-text > h1 {
+.lackieren-title-text > h1 {
   font-size: clamp(1.9rem, 4vw, 5rem);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text > p {
+.lackieren-title-text > p {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   line-height: 1.6;
   margin-bottom: 3rem;
   text-align: justify;
 }
 
-.list-item {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: clamp(0.75rem, 2vw, 1rem);
-}
-
 /* Responsive layout */
 @media (max-width: 768px) {
-  .drehen-content {
+  .lackieren-content {
     margin-top: 6rem;
   }
 
-  .drehen-title-text > h1 {
+  .lackieren-title-text > h1 {
     text-align: center;
   }
 }

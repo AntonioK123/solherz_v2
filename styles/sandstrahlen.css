@@ -1,4 +1,4 @@
-.drehen-wrapper {
+.sand-wrapper {
   width: 100%;
   min-height: 100vh;
   background-color: black;
@@ -7,23 +7,23 @@
   align-items: center;
 }
 
-.drehen-content {
+.sand-content {
   width: 80%;
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text {
+.sand-title-text {
   color: white;
 }
 
-.drehen-title-text > h1 {
-  font-size: clamp(1.9rem, 4vw, 5rem);
+.sand-title-text > h1 {
+  font-size: clamp(1.4rem, 4vw, 5rem);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
-.drehen-title-text > p {
+.sand-title-text > p {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   line-height: 1.6;
   margin-bottom: 3rem;
@@ -40,11 +40,17 @@
 
 /* Responsive layout */
 @media (max-width: 768px) {
-  .drehen-content {
+  .sand-content {
     margin-top: 6rem;
   }
 
-  .drehen-title-text > h1 {
+  .sand-title-text > h1 {
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .sand-content {
+    margin-top: 8rem;
   }
 }
