@@ -1,0 +1,137 @@
+.projektleitung-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projektleitung-content {
+  width: 80%;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.projektleitung-title-text {
+  color: white;
+}
+
+.projektleitung-title-text > h1 {
+  font-size: clamp(1.2rem, 4vw, 2.7rem);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.projektleitung-first-list {
+  color: white;
+}
+
+.projektleitung-first-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-second-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-second-list > h2 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-bottom: 2rem;
+}
+
+.projektleitung-second-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-third-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-third-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-fourth-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-fourth-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-fifth-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-fifth-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-sixth-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-sixth-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.projektleitung-seventh-list {
+  margin-top: 2rem;
+  color: white;
+}
+
+.projektleitung-seventh-list > p {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.list-item {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  padding-bottom: 1rem;
+  padding-top: 0.1rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .projektleitung-content {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  .projektleitung-title-text > h1 {
+    text-align: center;
+  }
+  .projektleitung-second-list > h2 {
+    text-align: center;
+  }
+}
