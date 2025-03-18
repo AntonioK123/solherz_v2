@@ -1146,3 +1146,133 @@ textarea:focus {
     width: 100%;
   }
 }
+
+.cookie-banner,
+.cookie-settings {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 30rem;
+  background: #ffffff;
+  color: #222;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.cookie-settings {
+  top: 30%;
+  bottom: auto;
+}
+
+.cookie-buttons button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  transition: background 0.3s;
+}
+
+.cookie-buttons button:first-child {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.cookie-buttons button:first-child:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.cookie-buttons button:nth-child(2) {
+  background: #888;
+  color: white;
+}
+
+.cookie-buttons button:nth-child(2):hover {
+  background: #555;
+}
+
+.cookie-buttons button:nth-child(3) {
+  background: transparent;
+  color: #222;
+  border: 1px solid #222;
+}
+
+.cookie-buttons button:nth-child(3):hover {
+  background: #222;
+  color: white;
+}
+
+#change-cookie-settings {
+  position: fixed;
+  bottom: -2rem;
+  right: 1rem;
+  padding: 1rem 2rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: bottom 0.5s ease-in-out;
+}
+
+#change-cookie-settings:hover {
+  bottom: 0rem; /* Fully visible */
+}
+
+p,
+h3 {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+
+label {
+  display: block;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.rechtlich-wrapper {
+  min-height: 5vh;
+}
+
+.rechtlich-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rechtlich-wrapper a {
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  #change-cookie-settings {
+    display: none !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .rechtlich-content {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .rechtlich-wrapper a {
+    padding: 0.5rem 0;
+  }
+}

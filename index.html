@@ -418,6 +418,37 @@
           </div>
         </section>
 
+      
+        <div id="cookie-banner" class="cookie-banner">
+          <p>Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können alle akzeptieren, ablehnen oder Ihre Auswahl anpassen.
+             Mehr Informationen in unserer <a href="./pages/datenschütz.html" target="_blank">Datenschutzerklärung</a>.</p>
+          <div class="cookie-buttons">
+              <button onclick="acceptAllCookies()">Alle akzeptieren</button>
+              <button onclick="rejectAllCookies()">Alle ablehnen</button>
+              <button onclick="openCookieSettings()">Einstellungen</button>
+          </div>
+      </div>
+      
+      <div id="cookie-settings" class="cookie-settings">
+          <h3>Cookie-Einstellungen</h3>
+          <p>Wählen Sie, welche Cookies Sie zulassen möchten:</p>
+          <label><input type="checkbox" id="essential-cookies" checked disabled> Notwendige Cookies (immer aktiv)</label>
+          <label><input type="checkbox" id="analytics-cookies"> Analyse-Cookies</label>
+          <label><input type="checkbox" id="marketing-cookies"> Marketing-Cookies</label>
+          <div class="cookie-buttons">
+              <button onclick="saveCookiePreferences()">Speichern</button>
+          </div>
+      </div>
+      
+      <button id="change-cookie-settings" onclick="openCookieSettings()">Zustimmung Verwalten</button>
+
+     <section class="rechtlich-wrapper">
+      <div class="rechtlich-content">
+        <a href="./pages/impressum.html">Impressum</a>
+
+        <a href="./pages/datenschütz.html">Datenschutzerklärung</a>
+      </div>
+     </section>
 
     <script src="./js/main.js"></script>
   </body>

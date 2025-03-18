@@ -1,0 +1,130 @@
+.impd-header-wrapper {
+  background: black;
+  min-height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.impd-header-content {
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.impd-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.impd-logo h2 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.impd-logo-subtitle {
+  font-size: clamp(0.8rem, 0.9vw, 1rem);
+  color: white;
+  text-align: center;
+}
+.impd-back-btn {
+  width: clamp(8rem, 5vw, 15rem);
+  height: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s ease-in-out;
+}
+
+.impd-back-btn:hover {
+  background: white;
+  color: black;
+}
+
+.datenschütz-wrapper {
+  padding-bottom: 1.5rem;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datenschütz-content {
+  width: 80%;
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+}
+.datenschütz-main-title {
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
+  margin-bottom: 4rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+ul,
+ol {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.datenschütz-info-block {
+  margin-bottom: 1.5rem;
+}
+
+.datenschütz-info-block > h2 {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .impd-header-wrapper {
+    min-height: 25vh;
+  }
+  .impd-header-content {
+    flex-direction: column;
+    padding: 0.8rem;
+  }
+  .impd-back-btn {
+    margin-top: 1rem;
+  }
+  .datenschütz-content {
+    margin-top: 13rem;
+  }
+  .datenschütz-main-title {
+    margin-bottom: 2.5rem;
+  }
+}
