@@ -105,3 +105,106 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
   }
 });
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let isValid = true;
+
+    // Get form elements
+    const form = this;
+    const formData = new FormData(form);
+
+    // Get input values
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const number = formData.get("number").trim();
+    const company = formData.get("company").trim();
+    const message = formData.get("message").trim();
+
+    // Error messages
+    const nameError = document.createElement("p");
+    const emailError = document.createElement("p");
+    const numberError = document.createElement("p");
+    const companyError = document.createElement("p");
+    const messageError = document.createElement("p");
+    const successMessage = document.createElement("p");
+    const errorMessage = document.createElement("p");
+
+    nameError.style.color = "red";
+    emailError.style.color = "red";
+    numberError.style.color = "red";
+    companyError.style.color = "red";
+    messageError.style.color = "red";
+    successMessage.style.color = "green";
+    errorMessage.style.color = "red";
+
+    // Remove previous error messages
+    document
+      .querySelectorAll(".error-message, .success-message")
+      .forEach((el) => el.remove());
+
+    // Validation
+    if (name === "") {
+      nameError.textContent = "Bitte geben Sie Ihren Namen ein.";
+      form.querySelector("#name").after(nameError);
+      isValid = false;
+    }
+
+    if (!email.match(/^\S+@\S+\.\S+$/)) {
+      emailError.textContent =
+        "Bitte geben Sie eine gültige Email-Adresse ein.";
+      form.querySelector("#email").after(emailError);
+      isValid = false;
+    }
+
+    if (number === "" || isNaN(number)) {
+      numberError.textContent =
+        "Bitte geben Sie eine gültige Telefonnummer ein.";
+      form.querySelector("#number").after(numberError);
+      isValid = false;
+    }
+
+    if (company === "") {
+      companyError.textContent = "Bitte geben Sie Ihr Unternehmen an.";
+      form.querySelector("#company").after(companyError);
+      isValid = false;
+    }
+
+    if (message.length < 10) {
+      messageError.textContent =
+        "Die Nachricht muss mindestens 10 Zeichen lang sein.";
+      form.querySelector("#message").after(messageError);
+      isValid = false;
+    }
+
+    if (!isValid) return;
+
+    // Send form data to Web3Forms API
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        successMessage.textContent = "Formular erfolgreich gesendet!";
+        successMessage.classList.add("success-message");
+        form.append(successMessage);
+        form.reset();
+      } else {
+        errorMessage.textContent = result.message;
+        errorMessage.classList.add("error-message");
+        form.append(errorMessage);
+      }
+    } catch (error) {
+      errorMessage.textContent =
+        "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.";
+      errorMessage.classList.add("error-message");
+      form.append(errorMessage);
+    }
+  });

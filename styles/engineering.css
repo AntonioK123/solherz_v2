@@ -74,7 +74,6 @@
   flex-direction: row;
   align-items: center;
   font-size: clamp(0.7rem, 2vw, 1rem);
-  /* padding-left: 2rem; */
   padding-bottom: 1rem;
   padding-top: 0.1rem;
 }
