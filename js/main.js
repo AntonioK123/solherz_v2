@@ -47,6 +47,7 @@ window.onload = function () {
 const burger = document.getElementById("burger");
 const fullscreenMenu = document.getElementById("fullscreenMenu");
 const closeMenu = document.getElementById("closeMenu");
+const menuLinks = document.querySelectorAll("#fullscreenMenu a");
 
 burger.addEventListener("click", () => {
   fullscreenMenu.classList.toggle("active");
@@ -55,6 +56,30 @@ burger.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   fullscreenMenu.classList.remove("active");
 });
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      fullscreenMenu.classList.remove("active");
+    }
+  });
+});
+
+function switchVideo() {
+  const desktopVideo = document.getElementById("desktopVideo");
+  const mobileVideo = document.getElementById("mobileVideo");
+
+  if (window.innerWidth <= 500) {
+    desktopVideo.style.display = "none";
+    mobileVideo.style.display = "block";
+  } else {
+    desktopVideo.style.display = "block";
+    mobileVideo.style.display = "none";
+  }
+}
+
+window.addEventListener("load", switchVideo);
+window.addEventListener("resize", switchVideo);
 
 // Smooth scroll on landing and external pages
 
