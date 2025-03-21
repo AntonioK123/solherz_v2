@@ -1,16 +1,36 @@
 // Get saved language or default to German
 let currentLang = localStorage.getItem("lang") || "de";
 
+// Load language data
 function loadLanguage(lang) {
-  fetch(`../lang/${lang}.json`)
-    .then((response) => response.json())
+  fetch(`../languages/${lang}.json`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
     .then((data) => {
+      // Update elements with data-i18n attributes
       document.querySelectorAll("[data-i18n]").forEach((el) => {
         let key = el.getAttribute("data-i18n");
-        if (data[key]) el.innerText = data[key];
+
+        // For text content
+        if (el.innerText && data[key]) {
+          el.innerText = data[key];
+        }
+
+        // For input placeholders
+        if (el.placeholder && data[key]) {
+          el.placeholder = data[key];
+        }
       });
+
       localStorage.setItem("lang", lang);
-      document.documentElement.lang = lang; // Set the lang attribute for SEO
+      document.documentElement.lang = lang;
+    })
+    .catch((error) => {
+      console.error("Error loading language file:", error);
     });
 }
 
