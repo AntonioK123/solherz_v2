@@ -1,3 +1,25 @@
+// Get saved language or default to German
+let currentLang = localStorage.getItem("lang") || "de";
+
+function loadLanguage(lang) {
+  fetch(`../lang/${lang}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        let key = el.getAttribute("data-i18n");
+        if (data[key]) el.innerText = data[key];
+      });
+      localStorage.setItem("lang", lang);
+      document.documentElement.lang = lang; // Set the lang attribute for SEO
+    });
+}
+
+function setLanguage(lang) {
+  loadLanguage(lang);
+}
+
+loadLanguage(currentLang);
+
 function acceptAllCookies() {
   localStorage.setItem(
     "cookieConsent",
@@ -86,7 +108,12 @@ window.addEventListener("resize", switchVideo);
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
+    const href = this.getAttribute("href");
+
+    // Ignore empty href (#)
+    if (href === "#") return;
+
+    const target = document.querySelector(href);
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }

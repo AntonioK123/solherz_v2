@@ -23,8 +23,8 @@
       </video>
       <div class="hero-overlay"></div>
       <div class="content">
-        <h1>Willkommen bei Solherz</h1>
-        <p class="subtitle">
+        <h1 data-i18n="hero-title">Willkommen bei Solherz</h1>
+        <p class="subtitle" data-i18n="hero-subtitle">
           Ihrem zuverlässigen Partner für Bauteile und Produkte
         </p>
       </div>
@@ -34,16 +34,22 @@
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#kompetenzen">Fertigung & Beschaffung</a></li>
-          <li><a href="#engineering">Engineering </a></li>
-          <li><a href="#projektleitung">Projektleitung</a></li>
-          <li><a href="#ueber-uns">Über Uns</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#home" data-i18n="nav-home">Home</a></li>
+          <li><a href="#kompetenzen" data-i18n="nav-kompetenzen">Fertigung & Beschaffung</a></li>
+          <li><a href="#engineering" data-i18n="nav-engineering">Engineering </a></li>
+          <li><a href="#projektleitung" data-i18n="nav-projektleitung">Projektleitung</a></li>
+          <li><a href="#ueber-uns" data-i18n="nav-about">Über Uns</a></li>
+          <li><a href="#kontakt" data-i18n="nav-contact">Kontakt</a></li>
+          <li> <a href="#" onclick="setLanguage('de')">
+            <img src="./assets//svg/germany.svg" alt="German Flag" width="25"> 
+          </a> </li>
+          <li> <a href="#" onclick="setLanguage('en')">
+            <img src="./assets//svg/uk.svg" alt="German Flag" width="25"> 
+          </a> </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -61,19 +67,19 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="#engineering">Engineering </a></li>
-        <li><a href="#projektleitung">Projektleitung</a></li>
-        <li><a href="#ueber-uns">Über Uns</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#home" data-i18n="burger-home" >Home</a></li>
+        <li><a href="#kompetenzen" data-i18n="burger-kompetenzen">Fertigung & Beschaffung</a></li>
+        <li><a href="#engineering" data-i18n="burger-engineering">Engineering </a></li>
+        <li><a href="#projektleitung" data-i18n="burger-projektleitung">Projektleitung</a></li>
+        <li><a href="#ueber-uns" data-i18n="burger-about">Über Uns</a></li>
+        <li><a href="#kontakt" data-i18n="burger-contact">Kontakt</a></li>
       </ul>
     </div>
 
     <!---------------------------------- Kompetenzen Section -------------------------------->
     <section class="kompetenzen" id="kompetenzen">
       <div class="kompetenzen-content">
-        <h2>FERTIGUNG & BESCHAFFUNG</h2>
+        <h2 data-i18n="kompetenzen-title">FERTIGUNG & BESCHAFFUNG</h2>
       </div>
     </section>
 
@@ -87,8 +93,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Drehen</div>
-          <a href="./pages/drehen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="drehen-title" >Drehen</div>
+          <a href="./pages/drehen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
         <div class="grid-item">
           <img
@@ -98,8 +104,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Fräsen</div>
-          <a href="./pages/fräsen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="fräsen-title">Fräsen</div>
+          <a href="./pages/fräsen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
         <div class="grid-item">
           <img
@@ -109,8 +115,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Schleifen</div>
-          <a href="./pages/schleifen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="schleifen-title" >Schleifen</div>
+          <a href="./pages/schleifen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
         <div class="grid-item">
@@ -121,8 +127,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Schweißen</div>
-          <a href="./pages/schweissen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="schweissen-title">Schweißen</div>
+          <a href="./pages/schweissen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
         <div class="grid-item">
@@ -133,8 +139,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Umformen</div>
-          <a href="./pages/umformen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="umformen-title">Umformen</div>
+          <a href="./pages/umformen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
 
@@ -146,8 +152,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Schneiden</div>
-          <a href="./pages/schneiden.html" class="button">Mehr</a>
+          <div class="title" data-i18n="schneiden-title">Schneiden</div>
+          <a href="./pages/schneiden.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
         <div class="grid-item">
@@ -158,8 +164,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Wärmebehandlung</div>
-          <a href="./pages/wärmebehandlung.html" class="button">Mehr</a>
+          <div class="title" data-i18n="wärme-title">Wärmebehandlung</div>
+          <a href="./pages/wärmebehandlung.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
         
@@ -171,8 +177,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Sandstrahlen</div>
-          <a href="./pages/sandstrahlen.html" class="button">Mehr</a>
+          <div class="title" data-i18n="sand-title">Sandstrahlen</div>
+          <a href="./pages/sandstrahlen.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
         <div class="grid-item">
@@ -183,8 +189,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Lackieren</div>
-          <a href="./pages/lackieren.html" class="button">Mehr</a>
+          <div class="title" data-i18n="lackieren-title">Lackieren</div>
+          <a href="./pages/lackieren.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
 
@@ -196,8 +202,8 @@
             class="grid-image"
           />
           <div class="overlay"></div>
-          <div class="title">Qualitätskontrolle und Messtechnik</div>
-          <a href="./pages/qualität.html" class="button">Mehr</a>
+          <div class="title" data-i18n="qualität-title">Qualitätskontrolle und Messtechnik</div>
+          <a href="./pages/qualität.html" class="button" data-i18n="mehr-btn">Mehr</a>
         </div>
 
 
@@ -211,16 +217,16 @@
     <section class="engineering-section" id="engineering">
       <div class="container">
         <div class="text-container">
-          <h2>ENGINEERING</h2>
-          <p>
+          <h2 data-i18n="engineering-home-title">ENGINEERING</h2>
+          <p data-i18n="engineering-home-text">
             Zusätzlich zur Fertigung und Beschaffung werden auch Engineering Dienstleistungen im Bereich der mechanischen Konstruktion angeboten. Durch die Zusammenarbeit mit erfahrenen Konstrukteuren aus Südosteuropa wird eine hohe Qualität auf dem Niveau der DACH-Region gewährleistet. Ergänzend sorgt das Vier-Augen-Prinzip dafür, dass alle Konstruktionsaufgaben von österreichischen Maschinenbauingenieuren betreut und überprüft werden. Diese Kombination ermöglicht nicht nur wettbewerbsfähige Preise, sondern auch eine zuverlässige und hochwertige Umsetzung.
           </p>
         </div>
         <div class="image-container">
           <img src="./assets/images/Engineering 1.jpg" alt="Engineering Image" class="engineering-image">
           <div class="engineering-overlay"></div>
-          <div class="engineering-title">ENGINEERING</div>
-          <a href="./pages/engineering.html" class="engineering-button">Mehr</a>
+          <div class="engineering-title" data-i18n="engineering-img-title">ENGINEERING</div>
+          <a href="./pages/engineering.html" class="engineering-button" data-i18n="mehr-btn">Mehr</a>
         </div>
       </div>
     </section>
@@ -231,18 +237,18 @@
     <!------------------------------Projektleitung------------------------------------------->
 
     <section class="projektleitung-section-wrapper" id="projektleitung">
-      <h2>Projektleitung für Standortaufbau im Ausland</h2>
+      <h2 data-i18n="projektleitung-home-title">Projektleitung für Standortaufbau im Ausland</h2>
       <div class="projektleitung-content-wrapper">
         <div class="projektleitung-text-container">
-          <p>
+          <p data-i18n="projektleitung-home-text">
             Planen Sie den Aufbau eines Standorts für Fertigung, Engineering oder beides in Kroatien oder Bosnien und Herzegowina?
           </p>
         </div>
         <div class="projektleitung-image-container">   
           <img src="./assets/images/Projektleitung.jpg" alt="Projektleitung Image" class="projektleitung-image">
           <div class="projektleitung-overlay"></div>
-          <div class="projektleitung-title">Projektleitung</div>
-          <a href="./pages/projektleitung.html" class="projektleitung-button">Mehr</a>
+          <div class="projektleitung-title" data-i18n="projektleitung-img-title">Projektleitung</div>
+          <a href="./pages/projektleitung.html" class="projektleitung-button" data-i18n="mehr-btn">Mehr</a>
         </div>
       </div>
      
@@ -254,8 +260,8 @@
      
     <section class="über-wrapper" id="ueber-uns">
       <div class="über-text-container">
-        <h1>Über uns</h1>
-        <p>
+        <h1 data-i18n="über-title">Über uns</h1>
+        <p data-i18n="über-text-first-paragraph">
           Solherz wurde mit einer klaren Vision ins Leben gerufen.
            Die europäische Industrie, insbesondere in der DACH-Region,
             steht vor der dringenden Aufgabe, Produktionskosten zu optimieren und 
@@ -266,7 +272,7 @@
                DACH-Region die Dienstleistungen erstklassiger Hersteller aus Südosteuropa zur Verfügung. Dabei gewährleisten wir, dass unsere 
                Kunden von einer verlässlichen, leistungsstarken Lieferkette profitieren und ihre Produktionsziele effizient erreichen können. 
         </p>
-        <p>
+        <p data-i18n="über-text-second-paragraph">
           Neben der Fertigung bzw. Beschaffung bieten wir auch Engineering Dienstleistungen 
           für die mechanische Konstruktion an. Engineering Kosten fallen in der Regel in geringerem Umfang an als die Fertigung,
            können aber dennoch eine Herausforderung darstellen. Wir bieten hohe Qualität auf dem Niveau der DACH-Region, da wir mit den
@@ -283,7 +289,7 @@
 
     <section class="bio-wrapper">
       <div class="bio-content-wrapper">
-        <h1>Biographie des Gründers</h1>
+        <h1 data-i18n="bio-title">Biographie des Gründers</h1>
         <div class="bio-text-img-container">
           <div class="bio-first-block">
             <div class="bio-img-container">
@@ -291,8 +297,8 @@
             </div>
         </div>
         <div class="bio-second-block">
-          <h1>Biographie des Gründers</h1>
-        <p>
+          <h1 data-i18n="bio-title">Biographie des Gründers</h1>
+        <p data-i18n="bio-text">
           Mit einem Abschluss in Maschinenbau von der TU Wien und langjähriger 
           Erfahrung in der Industrie verfüge ich über eine breite Expertise in der Entwicklung,
           Optimierung und Leitung technischer Projekte. Mein beruflicher Werdegang hat mich durch 
@@ -318,8 +324,8 @@
         <section class="kontakt-wrapper" id="kontakt">
           <div class="kontakt-content">
             <div class="kontakt-title">
-              <h1>Kontakt</h1>
-              <p>Interessiert an unseren Dienstleistungen? Kontaktieren Sie uns für ein unverbindliches Angebot oder eine individuelle Beratung. Wir freuen uns darauf, Ihre Projekte zu verwirklichen!</p>
+              <h1 data-i18n="kontakt-title">Kontakt</h1>
+              <p data-i18n="kontakt-text">Interessiert an unseren Dienstleistungen? Kontaktieren Sie uns für ein unverbindliches Angebot oder eine individuelle Beratung. Wir freuen uns darauf, Ihre Projekte zu verwirklichen!</p>
             </div>
              <div class="kontakt-two-blocks">
                <div class="kontakt-first-block">
@@ -329,7 +335,7 @@
                     <i class="bi bi-telephone-fill" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
                   </div>
                   <div class="handy-text">
-                    <h2>Rufen Sie uns an!</h2>
+                    <h2 data-i18n="handy-title">Rufen Sie uns an!</h2>
                     <p> +43 650 2608369 </p>
                   </div>
                 </div>
@@ -340,7 +346,7 @@
                     <i class="bi bi-pen-fill" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
                   </div>
                   <div class="schreiben-text">
-                    <h2>Schreiben Sie uns!</h2>
+                    <h2 data-i18n="schreiben-title">Schreiben Sie uns!</h2>
                     <p>office@solherz.at</p>
                   </div>
                 </div>
@@ -351,7 +357,7 @@
                     <i class="bi bi-compass" style="font-size:clamp(1.5rem, 4vw, 2rem); margin-right: 1.5rem; color:white"></i>
                   </div>
                   <div class="location-text">
-                    <h2>Besuchen Sie uns!</h2>
+                    <h2 data-i18n="besuchen-title">Besuchen Sie uns!</h2>
                     <p>Favoritenstrasse 24/14</p>
                     <p>1040 Wien</p>
                   </div>
@@ -374,6 +380,7 @@
                     type="text"
                     id="name"
                     name="name"
+                    data-i18n="namePlaceholder"
                     placeholder="Ihren Namen"
                     required
                   />
@@ -382,6 +389,7 @@
                     type="email"
                     id="email"
                     name="email"
+                    data-i18n="emailPlaceholder"
                     placeholder="Ihre Email"
                     required
                   />
@@ -390,6 +398,7 @@
                     type="text"
                     id="number"
                     name="number"
+                    data-i18n="phonePlaceholder"
                     placeholder="Telefonnummer"
                     required
                   />
@@ -398,6 +407,7 @@
                     type="text"
                     id="company"
                     name="company"
+                    data-i18n="companyPlaceholder"
                     placeholder="Unternehmen"
                     required
                   />
@@ -407,12 +417,13 @@
                   <textarea
                     id="message"
                     name="message"
+                    data-i18n="messagePlaceholder"
                     placeholder="Nachricht"
                     required
                   ></textarea>
                 </div>
     
-                <button type="submit" class="submit-btn">Senden</button>
+                <button type="submit" class="submit-btn" data-i18n="submit-button">Senden</button>
               </form>
                </div>
              </div>
@@ -421,33 +432,33 @@
 
       
         <div id="cookie-banner" class="cookie-banner">
-          <p>Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können alle akzeptieren, ablehnen oder Ihre Auswahl anpassen.
-             Mehr Informationen in unserer <a href="./pages/datenschutz.html" target="_blank">Datenschutzerklärung</a>.</p>
+          <p data-i18n="cookie-banner-text">Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können alle akzeptieren, ablehnen oder Ihre Auswahl anpassen.
+             Mehr Informationen in unserer <a href="./pages/datenschutz.html" target="_blank" data-i18n="cookie-banner-link">Datenschutzerklärung</a>.</p>
           <div class="cookie-buttons">
-              <button onclick="acceptAllCookies()">Alle akzeptieren</button>
-              <button onclick="rejectAllCookies()">Alle ablehnen</button>
-              <button onclick="openCookieSettings()">Einstellungen</button>
+              <button onclick="acceptAllCookies()" data-i18n="cookie-option-accept">Alle akzeptieren</button>
+              <button onclick="rejectAllCookies()" data-i18n="cookie-option-reject">Alle ablehnen</button>
+              <button onclick="openCookieSettings()" data-i18n="cookie-option-settings">Einstellungen</button>
           </div>
       </div>
       
       <div id="cookie-settings" class="cookie-settings">
-          <h3>Cookie-Einstellungen</h3>
-          <p>Wählen Sie, welche Cookies Sie zulassen möchten:</p>
-          <label><input type="checkbox" id="essential-cookies" checked disabled> Notwendige Cookies (immer aktiv)</label>
-          <label><input type="checkbox" id="analytics-cookies"> Analyse-Cookies</label>
-          <label><input type="checkbox" id="marketing-cookies"> Marketing-Cookies</label>
+          <h3 data-i18n="cookie-settings-title">Cookie-Einstellungen</h3>
+          <p data-i18n="cookie-settings-text">Wählen Sie, welche Cookies Sie zulassen möchten:</p>
+          <label><input type="checkbox" id="essential-cookies" data-i18n="essential-cookies" checked disabled> Notwendige Cookies (immer aktiv)</label>
+          <label><input type="checkbox" id="analytics-cookies" data-i18n="analytics-cookies"> Analyse-Cookies</label>
+          <label><input type="checkbox" id="marketing-cookies" data-i18n="marketing-cookies"> Marketing-Cookies</label>
           <div class="cookie-buttons">
-              <button onclick="saveCookiePreferences()">Speichern</button>
+              <button onclick="saveCookiePreferences()" data-i18n="save-button">Speichern</button>
           </div>
       </div>
       
-      <button id="change-cookie-settings" onclick="openCookieSettings()">Zustimmung Verwalten</button>
+      <button id="change-cookie-settings" onclick="openCookieSettings()" data-i18n="change-cookie-settings">Zustimmung Verwalten</button>
 
      <section class="rechtlich-wrapper">
       <div class="rechtlich-content">
         <a href="./pages/impressum.html">Impressum</a>
 
-        <a href="./pages/datenschutz.html">Datenschutzerklärung</a>
+        <a href="./pages/datenschutz.html" data-i18n="daten-link">Datenschutzerklärung</a>
       </div>
      </section>
 
