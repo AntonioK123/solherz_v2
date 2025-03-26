@@ -4,7 +4,7 @@ function loadLanguage(lang) {
     path = path.split("/pages")[0];
   }
 
-  // Fetch the language JSON file 
+  // Fetch the language JSON file
   fetch(`${path}/languages/${lang}.json`)
     .then((response) => {
       if (!response.ok) {
@@ -16,14 +16,19 @@ function loadLanguage(lang) {
       document.querySelectorAll("[data-i18n]").forEach((el) => {
         let key = el.getAttribute("data-i18n");
 
+        // Traverse nested keys in the JSON structure
+        let translation = key
+          .split(".")
+          .reduce((obj, keyPart) => obj && obj[keyPart], data);
+
         // For text content
-        if (el.innerText && data[key]) {
-          el.innerText = data[key];
+        if (el.innerText && translation) {
+          el.innerText = translation;
         }
 
         // For input placeholders
-        if (el.placeholder && data[key]) {
-          el.placeholder = data[key];
+        if (el.placeholder && translation) {
+          el.placeholder = translation;
         }
       });
 
@@ -38,7 +43,6 @@ function loadLanguage(lang) {
 function setLanguage(lang) {
   loadLanguage(lang);
 }
-
 
 let currentLang = localStorage.getItem("lang") || "de";
 loadLanguage(currentLang);
@@ -81,10 +85,18 @@ function hideBanner() {
 
 window.onload = function () {
   const consent = localStorage.getItem("cookieConsent");
-  if (!consent) {
-    document.getElementById("cookie-banner").style.display = "block";
-  } else {
-    document.getElementById("change-cookie-settings").style.display = "block";
+  const cookieBanner = document.getElementById("cookie-banner");
+  const changeCookieSettings = document.getElementById(
+    "change-cookie-settings"
+  );
+  if (cookieBanner) {
+    if (!consent) {
+      cookieBanner.style.display = "block";
+    } else {
+      if (changeCookieSettings) {
+        changeCookieSettings.style.display = "block";
+      }
+    }
   }
 };
 
@@ -94,13 +106,17 @@ const fullscreenMenu = document.getElementById("fullscreenMenu");
 const closeMenu = document.getElementById("closeMenu");
 const menuLinks = document.querySelectorAll("#fullscreenMenu a");
 
-burger.addEventListener("click", () => {
-  fullscreenMenu.classList.toggle("active");
-});
+if (burger) {
+  burger.addEventListener("click", () => {
+    fullscreenMenu.classList.toggle("active");
+  });
+}
 
-closeMenu.addEventListener("click", () => {
-  fullscreenMenu.classList.remove("active");
-});
+if (closeMenu) {
+  closeMenu.addEventListener("click", () => {
+    fullscreenMenu.classList.remove("active");
+  });
+}
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
@@ -113,13 +129,14 @@ menuLinks.forEach((link) => {
 function switchVideo() {
   const desktopVideo = document.getElementById("desktopVideo");
   const mobileVideo = document.getElementById("mobileVideo");
-
-  if (window.innerWidth <= 500) {
-    desktopVideo.style.display = "none";
-    mobileVideo.style.display = "block";
-  } else {
-    desktopVideo.style.display = "block";
-    mobileVideo.style.display = "none";
+  if (desktopVideo && mobileVideo) {
+    if (window.innerWidth <= 500) {
+      desktopVideo.style.display = "none";
+      mobileVideo.style.display = "block";
+    } else {
+      desktopVideo.style.display = "block";
+      mobileVideo.style.display = "none";
+    }
   }
 }
 
@@ -156,9 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", async function (event) {
+const contact_form = document.getElementById("contact-form");
+if (contact_form) {
+  contact_form.addEventListener("submit", async function (event) {
     event.preventDefault(); // Prevent default form submission
 
     let isValid = true;
@@ -258,3 +275,4 @@ document
       form.append(errorMessage);
     }
   });
+}
