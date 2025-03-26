@@ -1,13 +1,10 @@
 function loadLanguage(lang) {
-  // Calculate the correct path to the languages folder
   let path = window.location.pathname.split("/").slice(0, -1).join("/");
-
-  // If we're inside the 'pages' folder, go up one level to the root
   if (path.includes("/pages")) {
     path = path.split("/pages")[0];
   }
 
-  // Fetch the language JSON file from the correct path
+  // Fetch the language JSON file 
   fetch(`${path}/languages/${lang}.json`)
     .then((response) => {
       if (!response.ok) {
@@ -16,7 +13,6 @@ function loadLanguage(lang) {
       return response.json();
     })
     .then((data) => {
-      // Update elements with data-i18n attributes
       document.querySelectorAll("[data-i18n]").forEach((el) => {
         let key = el.getAttribute("data-i18n");
 
@@ -31,7 +27,6 @@ function loadLanguage(lang) {
         }
       });
 
-      // Save language to localStorage and set the document's lang attribute
       localStorage.setItem("lang", lang);
       document.documentElement.lang = lang;
     })
@@ -44,7 +39,7 @@ function setLanguage(lang) {
   loadLanguage(lang);
 }
 
-// Get the saved language or default to German
+
 let currentLang = localStorage.getItem("lang") || "de";
 loadLanguage(currentLang);
 
