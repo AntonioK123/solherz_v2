@@ -3,7 +3,8 @@ let currentLang = localStorage.getItem("lang") || "de";
 
 // Load language data
 function loadLanguage(lang) {
-  fetch(`./languages/${lang}.json`)
+  let path = window.location.pathname.split("/").slice(0, -1).join("/");
+  fetch(`${path}/languages/${lang}.json`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
