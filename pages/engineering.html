@@ -20,24 +20,55 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/engineering.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/solherz_favicon.ico">
   </head>
   <body>
     <!-- Navigation -->
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#home" data-i18n="nav-home">Home</a></li>
           <li>
-            <a href="../index.html#kompetenzen">Fertigung & Beschaffung</a>
+            <a href="../index.html#kompetenzen" data-i18n="nav-kompetenzen"
+              >Fertigung & Beschaffung</a
+            >
           </li>
-          <li><a href="../index.html#engineering">Engineering </a></li>
-          <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-          <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-          <li><a href="../index.html#kontakt">Kontakt</a></li>
+          <li>
+            <a href="../index.html#engineering" data-i18n="nav-engineering"
+              >Engineering
+            </a>
+          </li>
+          <li>
+            <a
+              href="../index.html#projektleitung"
+              data-i18n="nav-projektleitung"
+              >Projektleitung</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#ueber-uns" data-i18n="nav-about">Über Uns</a>
+          </li>
+          <li>
+            <a href="../index.html#kontakt" data-i18n="nav-contact">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('de')">
+              <img
+                src="../assets//svg/germany.svg"
+                alt="German Flag"
+                width="25"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('en')">
+              <img src="../assets//svg/uk.svg" alt="German Flag" width="25" />
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -55,31 +86,55 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="../index.html#engineering">Engineering </a></li>
-        <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-        <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="../index.html#home" data-i18n="burger-home">Home</a></li>
+        <li>
+          <a href="../index.html#kompetenzen" data-i18n="burger-kompetenzen"
+            >Fertigung & Beschaffung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#engineering" data-i18n="burger-engineering"
+            >Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            href="../index.html#projektleitung"
+            data-i18n="burger-projektleitung"
+            >Projektleitung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#ueber-uns" data-i18n="burger-about"
+            >Über Uns</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#kontakt" data-i18n="burger-contact">Kontakt</a>
+        </li>
       </ul>
     </div>
 
     <section class="engineering-wrapper">
       <div class="engineering-content">
         <div class="engineering-title-text">
-          <h1>ENGINEERING</h1>
+          <h1 data-i18n="engineering-title">ENGINEERING</h1>
         </div>
 
         <div class="engineering-first-list">
-          <h2>Unsere Dienstleistungen</h2>
+          <h2 data-i18n="engineering-services-title">
+            Unsere Dienstleistungen
+          </h2>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>CAD-Mechanische Konstruktion</h4>
+            <h4 data-i18n="engineering-service-1">
+              CAD-Mechanische Konstruktion
+            </h4>
           </div>
-          <p>
+          <p data-i18n="engineering-description-1">
             Mit CAD-Software werden präzise 3D-Modelle von Bauteilen und
             Baugruppen erstellt. Diese ermöglichen eine detaillierte
             Visualisierung und eine effiziente Weiterverarbeitung in der
@@ -95,9 +150,9 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Zeichnungserstellung</h4>
+            <h4 data-i18n="engineering-service-2">Zeichnungserstellung</h4>
           </div>
-          <p>
+          <p data-i18n="engineering-description-2">
             Zur Fertigung werden präzise 2D-Zeichnungen mit exakten Bemaßungen,
             Toleranzen und technischen Spezifikationen erstellt. Diese
             Fertigungszeichnungen enthalten alle relevanten Informationen für
@@ -112,9 +167,9 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Produktentwicklung</h4>
+            <h4 data-i18n="engineering-service-3">Produktentwicklung</h4>
           </div>
-          <p>
+          <p data-i18n="engineering-description-3">
             Von der ersten Idee bis zur fertigen Konstruktion werden
             Entwicklungsprozesse unterstützt. Für anspruchsvolle Berechnungen
             zur Optimierung von Produkten, wie FEM- (Finite-Elemente-Methode)

@@ -20,24 +20,55 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/sandstrahlen.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/solherz_favicon.ico">
   </head>
   <body>
     <!-- Navigation -->
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#home" data-i18n="nav-home">Home</a></li>
           <li>
-            <a href="../index.html#kompetenzen">Fertigung & Beschaffung</a>
+            <a href="../index.html#kompetenzen" data-i18n="nav-kompetenzen"
+              >Fertigung & Beschaffung</a
+            >
           </li>
-          <li><a href="../index.html#engineering">Engineering </a></li>
-          <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-          <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-          <li><a href="../index.html#kontakt">Kontakt</a></li>
+          <li>
+            <a href="../index.html#engineering" data-i18n="nav-engineering"
+              >Engineering
+            </a>
+          </li>
+          <li>
+            <a
+              href="../index.html#projektleitung"
+              data-i18n="nav-projektleitung"
+              >Projektleitung</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#ueber-uns" data-i18n="nav-about">Über Uns</a>
+          </li>
+          <li>
+            <a href="../index.html#kontakt" data-i18n="nav-contact">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('de')">
+              <img
+                src="../assets//svg/germany.svg"
+                alt="German Flag"
+                width="25"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('en')">
+              <img src="../assets//svg/uk.svg" alt="German Flag" width="25" />
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -55,23 +86,43 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="../index.html#engineering">Engineering </a></li>
-        <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-        <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="../index.html#home" data-i18n="burger-home">Home</a></li>
+        <li>
+          <a href="../index.html#kompetenzen" data-i18n="burger-kompetenzen"
+            >Fertigung & Beschaffung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#engineering" data-i18n="burger-engineering"
+            >Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            href="../index.html#projektleitung"
+            data-i18n="burger-projektleitung"
+            >Projektleitung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#ueber-uns" data-i18n="burger-about"
+            >Über Uns</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#kontakt" data-i18n="burger-contact">Kontakt</a>
+        </li>
       </ul>
     </div>
 
     <section class="sand-wrapper">
       <div class="sand-content">
         <div class="sand-title-text">
-          <h1>Sandstrahlen</h1>
-          <p>
+          <h1 data-i18n="sand-title">Sandstrahlen</h1>
+          <p data-i18n="sand-text">
             Der Sandstrahlprozess wird von erfahrenen Fachkräften durchgeführt,
             die bereit sind, alle Anforderungen unserer Kunden zu erfüllen. Die
-            Strahlräume die unseren Partner zur Verfügung stehen, ist in der
+            Strahlräume, die unseren Partnern zur Verfügung stehen, sind in der
             Lage, sowohl kleine Teile und Baugruppen als auch größere Strukturen
             zu bearbeiten. Unsere Sandstrahltechnik eignet sich für die
             Oberflächenvorbehandlung von verschiedenen Materialien und trägt zur
@@ -85,7 +136,9 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 2rem; margin-right: 0.5rem"
             ></i>
-            <h4>Maximale Größe: 10000 mm x 8000 mm x 3600 mm</h4>
+            <h4 data-i18n="sand-max-size">
+              Maximale Größe: 10000 mm x 8000 mm x 3600 mm
+            </h4>
           </div>
         </div>
       </div>

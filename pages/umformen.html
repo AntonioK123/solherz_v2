@@ -20,24 +20,55 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/umformen.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/solherz_favicon.ico">
   </head>
   <body>
     <!-- Navigation -->
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#home" data-i18n="nav-home">Home</a></li>
           <li>
-            <a href="../index.html#kompetenzen">Fertigung & Beschaffung</a>
+            <a href="../index.html#kompetenzen" data-i18n="nav-kompetenzen"
+              >Fertigung & Beschaffung</a
+            >
           </li>
-          <li><a href="../index.html#engineering">Engineering </a></li>
-          <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-          <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-          <li><a href="../index.html#kontakt">Kontakt</a></li>
+          <li>
+            <a href="../index.html#engineering" data-i18n="nav-engineering"
+              >Engineering
+            </a>
+          </li>
+          <li>
+            <a
+              href="../index.html#projektleitung"
+              data-i18n="nav-projektleitung"
+              >Projektleitung</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#ueber-uns" data-i18n="nav-about">Über Uns</a>
+          </li>
+          <li>
+            <a href="../index.html#kontakt" data-i18n="nav-contact">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('de')">
+              <img
+                src="../assets//svg/germany.svg"
+                alt="German Flag"
+                width="25"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('en')">
+              <img src="../assets//svg/uk.svg" alt="German Flag" width="25" />
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -55,20 +86,40 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="../index.html#engineering">Engineering </a></li>
-        <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-        <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="../index.html#home" data-i18n="burger-home">Home</a></li>
+        <li>
+          <a href="../index.html#kompetenzen" data-i18n="burger-kompetenzen"
+            >Fertigung & Beschaffung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#engineering" data-i18n="burger-engineering"
+            >Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            href="../index.html#projektleitung"
+            data-i18n="burger-projektleitung"
+            >Projektleitung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#ueber-uns" data-i18n="burger-about"
+            >Über Uns</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#kontakt" data-i18n="burger-contact">Kontakt</a>
+        </li>
       </ul>
     </div>
 
     <section class="umformen-wrapper">
       <div class="umformen-content">
         <div class="umformen-title-text">
-          <h1>Umformen</h1>
-          <p>
+          <h1 data-i18n="umformen-title">Umformen</h1>
+          <p data-i18n="umformen-text">
             Fertigungsmethoden für Pressen, Walzen und Biegen ermöglichen
             präzise und effiziente Lösungen für verschiedene Anwendungen in der
             Metallbearbeitung und Fertigung. Durch innovative Technologie und
@@ -78,62 +129,72 @@
         </div>
 
         <div class="umformen-first-list">
-          <h3>Pressen</h3>
+          <h3 data-i18n="pressen-title">Pressen</h3>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Werkstückgröße XY: Bis 2000 mm</h4>
+            <h4 data-i18n="pressen-list-item-one">
+              Werkstückgröße XY: Bis 2000 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Druckkraft: 6.000 kN</h4>
+            <h4 data-i18n="pressen-list-item-two">Druckkraft: 6.000 kN</h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Materialdicke: Bis 20 mm</h4>
+            <h4 data-i18n="pressen-list-item-three">
+              Materialdicke: Bis 20 mm
+            </h4>
           </div>
         </div>
         <div class="umformen-second-list">
-          <h3>Biegen</h3>
+          <h3 data-i18n="biegen-title">Biegen</h3>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Arbeitslänge: Bis zu 4000 mm</h4>
+            <h4 data-i18n="biegen-list-item-one">
+              Arbeitslänge: Bis zu 4000 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Druckkraft: 4000 kN</h4>
+            <h4 data-i18n="biegen-list-item-two">Druckkraft: 4000 kN</h4>
           </div>
         </div>
 
         <div class="umformen-third-list">
-          <h3>Walzen</h3>
+          <h3 data-i18n="walzen-title">Walzen</h3>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Materialdicke: Bis zu 40 mm</h4>
+            <h4 data-i18n="waltzen-list-item-one">
+              Materialdicke: Bis zu 40 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Materialbreite: Bis zu 5 m</h4>
+            <h4 data-i18n="waltzen-list-item-two">
+              Materialbreite: Bis zu 5 m
+            </h4>
           </div>
         </div>
       </div>

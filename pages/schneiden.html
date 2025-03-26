@@ -20,24 +20,55 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/schneiden.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/solherz_favicon.ico">
   </head>
   <body>
     <!-- Navigation -->
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#home" data-i18n="nav-home">Home</a></li>
           <li>
-            <a href="../index.html#kompetenzen">Fertigung & Beschaffung</a>
+            <a href="../index.html#kompetenzen" data-i18n="nav-kompetenzen"
+              >Fertigung & Beschaffung</a
+            >
           </li>
-          <li><a href="../index.html#engineering">Engineering </a></li>
-          <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-          <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-          <li><a href="../index.html#kontakt">Kontakt</a></li>
+          <li>
+            <a href="../index.html#engineering" data-i18n="nav-engineering"
+              >Engineering
+            </a>
+          </li>
+          <li>
+            <a
+              href="../index.html#projektleitung"
+              data-i18n="nav-projektleitung"
+              >Projektleitung</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#ueber-uns" data-i18n="nav-about">Über Uns</a>
+          </li>
+          <li>
+            <a href="../index.html#kontakt" data-i18n="nav-contact">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('de')">
+              <img
+                src="../assets//svg/germany.svg"
+                alt="German Flag"
+                width="25"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('en')">
+              <img src="../assets//svg/uk.svg" alt="German Flag" width="25" />
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -55,24 +86,44 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="../index.html#engineering">Engineering </a></li>
-        <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-        <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="../index.html#home" data-i18n="burger-home">Home</a></li>
+        <li>
+          <a href="../index.html#kompetenzen" data-i18n="burger-kompetenzen"
+            >Fertigung & Beschaffung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#engineering" data-i18n="burger-engineering"
+            >Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            href="../index.html#projektleitung"
+            data-i18n="burger-projektleitung"
+            >Projektleitung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#ueber-uns" data-i18n="burger-about"
+            >Über Uns</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#kontakt" data-i18n="burger-contact">Kontakt</a>
+        </li>
       </ul>
     </div>
 
     <section class="schneiden-wrapper">
       <div class="schneiden-content">
         <div class="schneiden-title-text">
-          <h1>Schneiden</h1>
+          <h1 data-i18n="schneiden-title">Schneiden</h1>
         </div>
 
         <div class="schneiden-first-list">
-          <h3>Laserschneiden</h3>
-          <p>
+          <h3 data-i18n="laserschneiden-title">Laserschneiden</h3>
+          <p data-i18n="laserschneiden-text">
             Das Laserschneiden ist ein hochpräzises Verfahren, das vor allem bei
             dünneren Materialien und komplexen Konturen Anwendung findet. Die
             Genauigkeit und die geringe Wärmeentwicklung machen es besonders für
@@ -83,20 +134,24 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Arbeitsfläche: 3000 x 1500 mm</h4>
+            <h4 data-i18n="laserschneiden-area">
+              Arbeitsfläche: 3000 x 1500 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Maximale Materialstärke: 30 mm</h4>
+            <h4 data-i18n="laserschneiden-thickness">
+              Maximale Materialstärke: 30 mm
+            </h4>
           </div>
         </div>
 
         <div class="schneiden-second-list">
-          <h3>Plasmaschneiden</h3>
-          <p>
+          <h3 data-i18n="plasmaschneiden-title">Plasmaschneiden</h3>
+          <p data-i18n="plasmaschneiden-text">
             Das Plasmaschneiden ist eine schnelle und leistungsstarke Methode,
             die vor allem bei dickeren Metallen bevorzugt wird. Diese Technik
             wird häufig im Stahlbau und in der Schwerindustrie eingesetzt, da
@@ -107,40 +162,47 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Arbeitsfläche: 2000 x 12000 mm</h4>
+            <h4 data-i18n="plasmaschneiden-area">
+              Arbeitsfläche: 2000 x 12000 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Maximale Materialstärke: 200 mm</h4>
+            <h4 data-i18n="plasmaschneiden-thickness">
+              Maximale Materialstärke: 200 mm
+            </h4>
           </div>
         </div>
 
         <div class="schneiden-third-list">
-          <h3>Wasserstrahlschneiden</h3>
-          <p>
+          <h3 data-i18n="wasserstrahlschneiden-title">Wasserstrahlschneiden</h3>
+          <p data-i18n="wasserstrahlschneiden-text">
             Das Wasserstrahlschneiden ist ein vielseitiges Verfahren, das nahezu
             alle Materialien – von Metall über Glas bis hin zu Keramik –
             bearbeiten kann. Es eignet sich insbesondere für
             temperaturempfindliche Materialien, da kein thermischer Einfluss
-            erfolgt. Seine Flexibilität macht es ideal für anspruchsvolle
-            Anwendungen in verschiedenen Industriezweigen.
+            erfolgt.
           </p>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Arbeitsfläche: 2000x4000 mm</h4>
+            <h4 data-i18n="wasserstrahlschneiden-area">
+              Arbeitsfläche: 2000x4000 mm
+            </h4>
           </div>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Maximale Materialstärke: 200 mm</h4>
+            <h4 data-i18n="wasserstrahlschneiden-thickness">
+              Maximale Materialstärke: 200 mm
+            </h4>
           </div>
         </div>
       </div>

@@ -20,24 +20,55 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/projektleitung.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/solherz_favicon.ico">
   </head>
   <body>
     <!-- Navigation -->
     <header>
       <div class="logo">
         <h2>Solherz</h2>
-        <p class="logo-subtitle">Qualität Verbindet</p>
+        <p class="logo-subtitle" data-i18n="logo-slogan">Qualität Verbindet</p>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#home" data-i18n="nav-home">Home</a></li>
           <li>
-            <a href="../index.html#kompetenzen">Fertigung & Beschaffung</a>
+            <a href="../index.html#kompetenzen" data-i18n="nav-kompetenzen"
+              >Fertigung & Beschaffung</a
+            >
           </li>
-          <li><a href="../index.html#engineering">Engineering </a></li>
-          <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-          <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-          <li><a href="../index.html#kontakt">Kontakt</a></li>
+          <li>
+            <a href="../index.html#engineering" data-i18n="nav-engineering"
+              >Engineering
+            </a>
+          </li>
+          <li>
+            <a
+              href="../index.html#projektleitung"
+              data-i18n="nav-projektleitung"
+              >Projektleitung</a
+            >
+          </li>
+          <li>
+            <a href="../index.html#ueber-uns" data-i18n="nav-about">Über Uns</a>
+          </li>
+          <li>
+            <a href="../index.html#kontakt" data-i18n="nav-contact">Kontakt</a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('de')">
+              <img
+                src="../assets//svg/germany.svg"
+                alt="German Flag"
+                width="25"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="setLanguage('en')">
+              <img src="../assets//svg/uk.svg" alt="German Flag" width="25" />
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- Burger Menu for Mobile -->
@@ -55,22 +86,44 @@
         <div class="line"></div>
       </div>
       <ul>
-        <li><a href="../index.html#home">Home</a></li>
-        <li><a href="../index.html#kompetenzen">Fertigung & Beschaffung</a></li>
-        <li><a href="../index.html#engineering">Engineering </a></li>
-        <li><a href="../index.html#projektleitung">Projektleitung</a></li>
-        <li><a href="../index.html#ueber-uns">Über Uns</a></li>
-        <li><a href="../index.html#kontakt">Kontakt</a></li>
+        <li><a href="../index.html#home" data-i18n="burger-home">Home</a></li>
+        <li>
+          <a href="../index.html#kompetenzen" data-i18n="burger-kompetenzen"
+            >Fertigung & Beschaffung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#engineering" data-i18n="burger-engineering"
+            >Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            href="../index.html#projektleitung"
+            data-i18n="burger-projektleitung"
+            >Projektleitung</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#ueber-uns" data-i18n="burger-about"
+            >Über Uns</a
+          >
+        </li>
+        <li>
+          <a href="../index.html#kontakt" data-i18n="burger-contact">Kontakt</a>
+        </li>
       </ul>
     </div>
 
     <section class="projektleitung-wrapper">
       <div class="projektleitung-content">
         <div class="projektleitung-title-text">
-          <h1>Projektleitung für Standortaufbau im Ausland</h1>
+          <h1 data-i18n="project-leadership-title">
+            Projektleitung für Standortaufbau im Ausland
+          </h1>
         </div>
         <div class="projektleitung-first-list">
-          <p>
+          <p data-i18n="project-leadership-description">
             Wir sind Ihr verlässlicher Partner für diese Region! Mit unserem
             tiefen Verständnis der lokalen Gegebenheiten und unserem
             umfangreichen Netzwerk unterstützen wir Sie dabei, Ihre
@@ -86,15 +139,19 @@
         </div>
 
         <div class="projektleitung-second-list">
-          <h2>Unsere Dienstleistungen</h2>
+          <h2 data-i18n="project-leadership-services-title">
+            Unsere Dienstleistungen
+          </h2>
           <div class="list-item">
             <i
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Standortanalyse und strategische Planung</h4>
+            <h4 data-i18n="project-leadership-service-1">
+              Standortanalyse und strategische Planung
+            </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-1-description">
             Wir identifizieren gemeinsam mit Ihnen den optimalen Standort in
             Kroatien oder Bosnien und Herzegowina, der Ihre Anforderungen an
             Infrastruktur, Fachkräfte, Zulieferer und Marktzugang erfüllt. Dabei
@@ -109,9 +166,11 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Projektmanagement von Anfang bis Ende</h4>
+            <h4 data-i18n="project-leadership-service-2">
+              Projektmanagement von Anfang bis Ende
+            </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-2-description">
             Unsere erfahrenen Projektleiter koordinieren Ihr Vorhaben von der
             ersten Planung bis zur Inbetriebnahme. Wir steuern alle beteiligten
             Akteure, wie Architekten, Bauunternehmen und Behörden, und
@@ -126,9 +185,11 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Technische und operative Beratung</h4>
+            <h4 data-i18n="project-leadership-service-3">
+              Technische und operative Beratung
+            </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-3-description">
             Die Fertigungsunternehmen benötigen maßgeschneiderte Lösungen für
             ihre Produktionsanforderungen. Wir unterstützen Sie bei der
             technischen Planung von Werkhallen, Produktionslinien und Maschinen,
@@ -142,11 +203,11 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>
+            <h4 data-i18n="project-leadership-service-4">
               Unterstützung bei der Rekrutierung und Fachkräfteentwicklung
             </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-4-description">
             Wir helfen Ihnen, geeignete lokale Partner für die Rekrutierung zu
             finden und beraten bei der Auswahl von Fachkräften, die Ihren
             Anforderungen entsprechen. Darüber hinaus unterstützen wir Sie bei
@@ -161,9 +222,11 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Unterstützung bei behördlichen Genehmigungen</h4>
+            <h4 data-i18n="project-leadership-service-5">
+              Unterstützung bei behördlichen Genehmigungen
+            </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-5-description">
             Wir navigieren Sie durch die komplexen bürokratischen Anforderungen
             in Kroatien und Bosnien und Herzegowina. Ob Umweltauflagen,
             Bauvorschriften oder Arbeitsschutzgesetze – wir kümmern uns um die
@@ -178,9 +241,11 @@
               class="bi bi-check2-circle"
               style="color: white; font-size: 1.5rem; margin-right: 0.5rem"
             ></i>
-            <h4>Netzwerke und Lieferkettenmanagement</h4>
+            <h4 data-i18n="project-leadership-service-6">
+              Netzwerke und Lieferkettenmanagement
+            </h4>
           </div>
-          <p>
+          <p data-i18n="project-leadership-service-6-description">
             Mit unserem umfassenden Netzwerk in der Fertigungsindustrie
             verbinden wir Sie mit zuverlässigen Lieferanten, Dienstleistern und
             Partnern vor Ort. Wir sorgen dafür, dass Ihre Lieferkette effizient
